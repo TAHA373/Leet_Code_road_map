@@ -21,6 +21,7 @@ Feel free to contribute by adding more solutions, optimizing code, or suggesting
 
 This structure will help visitors understand the purpose of your repository and how to navigate it for their own learning.
 
+<img width="1338" alt="Screen Shot 2024-10-01 at 11 58 27 AM" src="https://github.com/user-attachments/assets/91f51374-59b7-44ff-8204-31a870022915">
 
 
 
