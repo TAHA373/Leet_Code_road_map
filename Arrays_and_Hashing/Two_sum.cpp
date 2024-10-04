@@ -29,27 +29,29 @@ public:
     }
 };
 */
-/*In this exercice we use Two pointers methode */
+/*In this exercice we use Two pointers methode */  /* Hashing map */
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target)
     {
         vector<int> result;
-        int left = nums.size() - 1;
-        int right = 0;
-        int tar = 0;
-        while (left != right)
+        map<int , int> map;
+        int tmp_target = 0;
+
+        for (int i = 0; i < nums.size(); i++)
         {
-            tar = nums[right] + nums[left];
-            if  (tar > target)
-                left--;
-            else if (tar < target)
-                right++;
+            tmp_target = target - nums[i];
+            if (map.find(tmp_target) == map.end())
+                map[nums[i]] = i;
             else
-                break ;
+            {
+                //map[i] = i;
+                result.push_back(map[tmp_target]);
+                result.push_back(i);
+                
+            }
         }
-        result.push_back(right + 1);
-        result.push_back(left + 1);
+
         return (result);
     }
 };
@@ -57,9 +59,9 @@ int main()
 {
     Solution s;
     vector<int>v2; 
-    vector<int> v = {3, 3};
+    vector<int> v = {2, 7,11,15};
 
-    v2 = s.twoSum(v, 6);
+    v2 = s.twoSum(v, 9);
     cout << v2[0] << endl;
     cout << v2[1] << endl;
 } 
