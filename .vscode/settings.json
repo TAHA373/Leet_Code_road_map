@@ -10,7 +10,9 @@
         "__locale": "cpp",
         "__string": "cpp",
         "string_view": "cpp",
-        "stack": "cpp"
+        "stack": "cpp",
+        "utility": "cpp",
+        "type_traits": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }
